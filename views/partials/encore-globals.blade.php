@@ -1,6 +1,6 @@
 <script>
-    var Asgard = {
-        backendUrl: '{{ config('asgard.core.core.admin-prefix') }}',
+    var Encore = {
+        backendUrl: '{{ config('encore.core.core.admin-prefix') }}',
         mediaGridCkEditor : '{{ route('media.grid.ckeditor') }}',
         mediaGridSelectUrl: '{{ route('media.grid.select') }}',
         dropzonePostUrl: '{{ route('api.media.store-dropzone') }}',

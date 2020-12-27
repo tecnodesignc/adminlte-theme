@@ -1,7 +1,7 @@
 //
 //  jQuery Slug Generation Plugin by Perry Trinier (perrytrinier@gmail.com)
-//  Modified November 2015 by Micheal Mand for AsgardCMS (micheal@kmdwebdesigns.com)
-//  Modified November 2015 by Simon Funk for AsgardCMS (simon.funk@treestones.ch)
+//  Modified November 2015 by Micheal Mand for EncoreCMS (micheal@kmdwebdesigns.com)
+//  Modified November 2015 by Simon Funk for EncoreCMS (simon.funk@treestones.ch)
 //  Licensed under the GPL: http://www.gnu.org/copyleft/gpl.html
 
 jQuery.fn.slug = function (options) {

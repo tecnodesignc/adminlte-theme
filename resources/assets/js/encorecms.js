@@ -30,8 +30,8 @@ import PageRoutes from '../../../../../Modules/Page/Assets/js/PageRoutes';
 import MediaRoutes from '../../../../../Modules/Media/Assets/js/MediaRoutes';
 
 
-const currentLocale = window.AsgardCMS.currentLocale;
-const adminPrefix = window.AsgardCMS.adminPrefix;
+const currentLocale = window.EncoreCMS.currentLocale;
+const adminPrefix = window.EncoreCMS.adminPrefix;
 
 const router = new VueRouter({
     mode: 'history',
@@ -43,14 +43,14 @@ const router = new VueRouter({
 });
 
 function makeBaseUrl() {
-    if (window.AsgardCMS.hideDefaultLocaleInURL == 1) {
+    if (window.EncoreCMS.hideDefaultLocaleInURL == 1) {
         return adminPrefix;
     }
     return `${currentLocale}/${adminPrefix}`;
 }
 
 const messages = {
-    [currentLocale]: window.AsgardCMS.translations,
+    [currentLocale]: window.EncoreCMS.translations,
 };
 
 const i18n = new VueI18n({

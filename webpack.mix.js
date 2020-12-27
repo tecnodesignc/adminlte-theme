@@ -6,7 +6,7 @@ const themeInfo = require('./theme.json');
 /**
  * Compile less
  */
-mix.less('resources/assets/less/asgard.less', 'assets/css/asgard.css');
+mix.less('resources/assets/less/encore.less', 'assets/css/encore.css');
 
 
 /**
@@ -17,8 +17,8 @@ mix.copy('resources/assets/js/main.js', 'assets/js/main.js');
 /**
  * Compile js and scss
  */
-// mix.js('resources/assets/js/asgardcms.js', 'assets/js/asgardcms.js');
-// mix.sass('resources/assets/scss/asgardcms.scss', 'assets/css/asgardcms.css');
+// mix.js('resources/assets/js/encorecms.js', 'assets/js/encorecms.js');
+// mix.sass('resources/assets/scss/encorecms.scss', 'assets/css/encorecms.css');
 
 /**
  * Copy node module

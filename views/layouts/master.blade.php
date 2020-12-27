@@ -18,7 +18,7 @@
     @endforeach
     <link media="all" type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
     {!! Theme::script('vendor/jquery/jquery.min.js') !!}
-    @include('partials.asgard-globals')
+    @include('partials.encore-globals')
     @section('styles')
     @show
     @stack('css-stack')
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     @routes
 </head>
-<body class="{{ config('asgard.core.core.skin', 'skin-blue') }} sidebar-mini" style="padding-bottom: 0 !important;">
+<body class="{{ config('encore.core.core.skin', 'skin-blue') }} sidebar-mini" style="padding-bottom: 0 !important;">
 <div class="wrapper" id="app">
     <header class="main-header">
         <a href="{{ route('dashboard.index') }}" class="logo">
@@ -76,14 +76,14 @@
     <script src="{{ URL::asset($js) }}" type="text/javascript"></script>
 @endforeach
 <script>
-    window.AsgardCMS = {
+    window.EncoreCMS = {
         translations: {!! $staticTranslations !!},
         locales: {!! json_encode(LaravelLocalization::getSupportedLocales()) !!},
         currentLocale: '{{ locale() }}',
         editor: '{{ $activeEditor }}',
-        adminPrefix: '{{ config('asgard.core.core.admin-prefix') }}',
+        adminPrefix: '{{ config('encore.core.core.admin-prefix') }}',
         hideDefaultLocaleInURL: '{{ config('laravellocalization.hideDefaultLocaleInURL') }}',
-        filesystem: '{{ config('asgard.media.config.filesystem') }}'
+        filesystem: '{{ config('encore.media.config.filesystem') }}'
     };
 </script>
 
@@ -102,11 +102,11 @@
     </script>
 <?php endif; ?>
 
-<?php if (config('asgard.core.core.ckeditor-config-file-path') !== ''): ?>
+<?php if (config('encore.core.core.ckeditor-config-file-path') !== ''): ?>
     <script>
         $('.ckeditor').each(function() {
             CKEDITOR.replace($(this).attr('name'), {
-                customConfig: '{{ config('asgard.core.core.ckeditor-config-file-path') }}'
+                customConfig: '{{ config('encore.core.core.ckeditor-config-file-path') }}'
             });
         });
     </script>

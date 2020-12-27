@@ -26382,8 +26382,8 @@ _vue2.default.component('TagsInput', __webpack_require__(215));
 _vue2.default.component('SingleMedia', __webpack_require__(218));
 _vue2.default.component('MediaManager', __webpack_require__(46));
 
-var currentLocale = window.AsgardCMS.currentLocale;
-var adminPrefix = window.AsgardCMS.adminPrefix;
+var currentLocale = window.EncoreCMS.currentLocale;
+var adminPrefix = window.EncoreCMS.adminPrefix;
 
 var router = new _vueRouter2.default({
     mode: 'history',
@@ -26392,13 +26392,13 @@ var router = new _vueRouter2.default({
 });
 
 function makeBaseUrl() {
-    if (window.AsgardCMS.hideDefaultLocaleInURL == 1) {
+    if (window.EncoreCMS.hideDefaultLocaleInURL == 1) {
         return adminPrefix;
     }
     return currentLocale + '/' + adminPrefix;
 }
 
-var messages = _defineProperty({}, currentLocale, window.AsgardCMS.translations);
+var messages = _defineProperty({}, currentLocale, window.EncoreCMS.translations);
 
 var i18n = new _vueI18n2.default({
     locale: currentLocale,
@@ -74106,7 +74106,7 @@ var _PageForm2 = _interopRequireDefault(_PageForm);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var locales = window.AsgardCMS.locales;
+var locales = window.EncoreCMS.locales;
 
 exports.default = [{
     path: '/page/pages',
@@ -93346,7 +93346,7 @@ exports.default = {
             form: new _formBackendValidation2.default(),
             loading: false,
             tags: {},
-            activeTab: window.AsgardCMS.currentLocale || 'en'
+            activeTab: window.EncoreCMS.currentLocale || 'en'
         };
     },
 
@@ -93803,7 +93803,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = {
     methods: {
         getCurrentEditor: function getCurrentEditor() {
-            var configuredEditor = window.AsgardCMS.editor;
+            var configuredEditor = window.EncoreCMS.editor;
             if (configuredEditor === 'simplemde') {
                 return 'markdown-editor';
             }
@@ -94524,7 +94524,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("tags-input", {
                       attrs: {
-                        namespace: "asgardcms/page",
+                        namespace: "encorecms/page",
                         value: _vm.tags,
                         "current-tags": _vm.tags
                       },
@@ -94613,7 +94613,7 @@ var _MediaForm2 = _interopRequireDefault(_MediaForm);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var locales = window.AsgardCMS.locales;
+var locales = window.EncoreCMS.locales;
 
 exports.default = [{
     path: '/media/media',
@@ -94872,7 +94872,7 @@ exports.default = {
     mounted: function mounted() {
         var _this4 = this;
 
-        if (window.AsgardCMS.filesystem === 's3') {
+        if (window.EncoreCMS.filesystem === 's3') {
             this.canEditFolders = false;
         }
         this.fetchMediaData();
@@ -96887,7 +96887,7 @@ exports.default = {
             form: new _formBackendValidation2.default(),
             loading: false,
             tags: {},
-            activeTab: window.AsgardCMS.currentLocale || 'en'
+            activeTab: window.EncoreCMS.currentLocale || 'en'
         };
     },
 
@@ -97178,7 +97178,7 @@ var render = function() {
                             _vm._v(" "),
                             _c("tags-input", {
                               attrs: {
-                                namespace: "asgardcms/media",
+                                namespace: "encorecms/media",
                                 value: _vm.tags,
                                 "current-tags": _vm.tags
                               },
@@ -97369,7 +97369,7 @@ if (userApiToken) {
 var currentLocale = document.head.querySelector('meta[name="current-locale"]');
 
 if (currentLocale) {
-    window.AsgardCMS.currentLocale = currentLocale.content;
+    window.EncoreCMS.currentLocale = currentLocale.content;
 } else {
     console.error('Current locale token not found in a meta tag.');
 }

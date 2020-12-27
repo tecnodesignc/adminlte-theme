@@ -1,15 +1,15 @@
 {
   "name": "tecnodesignc/adminlte-theme",
-  "type": "asgard-theme",
-  "description": "An AsgardCMS administration theme",
+  "type": "encore-theme",
+  "description": "An EncoreCMS administration theme",
   "keywords": [
-    "asgard-cms"
+    "encore-cms"
   ],
   "license": "MIT",
   "authors": [
     {
       "name": "Nicolas Widart",
-      "email": "info@asgardcms.com",
+      "email": "info@encorecms.com",
       "role": "Developer"
     }
   ],
