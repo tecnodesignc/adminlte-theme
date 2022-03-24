@@ -8,14 +8,14 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Nicolas Widart",
-      "email": "info@encorecms.com",
+      "name": "Marcos Rativa",
+      "email": "info@tecnodesign.com",
       "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=5.4",
-    "composer/installers": "~1.0"
+    "php": ">=8.0",
+    "composer/installers": "^2.1"
   },
   "scripts": {
     "post-install-cmd": [
@@ -25,9 +25,10 @@
       "php artisan stylist:publish"
     ]
   },
+
   "extra": {
     "branch-alias": {
-      "dev-master": "3.0.x-dev"
+      "dev-master": "2.0.x-dev"
     }
   },
   "minimum-stability": "dev",

@@ -13,6 +13,7 @@
     <meta name="user-api-token" content="{{ $currentUser->getFirstApiKey() }}">
     <meta name="current-locale" content="{{ locale() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <link rel="shortcut icon" href="{{ Theme::url('favicon.ico') }}">
     @foreach($cssFiles as $css)
         <link media="all" type="text/css" rel="stylesheet" href="{{ URL::asset($css) }}">
     @endforeach
@@ -45,10 +46,10 @@
     <header class="main-header">
         <a href="{{ route('dashboard.index') }}" class="logo">
             <span class="logo-mini">
-                @setting('core::site-name-mini')
+                  <img src="{{Theme::url('img/logo-sm.png')}}" alt="@setting('core::site-name')" height="24" />
             </span>
             <span class="logo-lg">
-                @setting('core::site-name')
+                 <img src="{{Theme::url('img/logo-light.png')}}" alt="@setting('core::site-name')" height="24" />
             </span>
         </a>
         @include('partials.top-nav')

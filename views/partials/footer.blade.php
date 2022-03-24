@@ -19,6 +19,6 @@
     </div>
 
     @yield('footer')
-    <strong>Copyright © {{ date('Y')}} <a href="http://encorecms.com" target="_blank">EncoreCms</a></strong>
+    <strong>Copyright © {{ date('Y')}} <a href="https://tecnodesign.com.co" target="_blank">EncoreCMS</a></strong>
 </footer>
 
