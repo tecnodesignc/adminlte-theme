@@ -70,7 +70,9 @@ var CKBUILDER_CONFIG = {
 		'listblock' : 1,
 		'indent' : 1,
 		'fakeobjects' : 1,
-		'menubutton' : 1
+		'menubutton' : 1,
+		'justify':1,
+		'videoembed':1
 	},
 	languages : {
 		'af' : 1,
